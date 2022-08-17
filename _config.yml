@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Akihiro Takemura"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/img/dscf3000.jpg"
   bio              : "Ph.D. student at National Institute of Informatics / The Graduate University for Advanced Studies, SOKENDAI"
   location         : "Tokyo, Japan"
   email            : "atakemura [dot] r [at] gmail [dot] com"
