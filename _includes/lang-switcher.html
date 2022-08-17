@@ -7,7 +7,7 @@
             {% if lang == site.default_lang %}
                 <a href="../">{{ lang_name }}</a>
             {% else %}
-                <a href="/{{ lang }}">{{ lang_name }}</a>
+                <a href="{{ site.url }}{{ lang }}">{{ lang_name }}</a>
             {% endif %}
         {% else %}
             {% if lang == site.default_lang %}
