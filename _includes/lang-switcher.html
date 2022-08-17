@@ -1,20 +1,8 @@
 {% for lang in site.languages %}
     {% assign lang_name = site.data[lang].l10n.lang_name %}
-    {% if lang == site.active_lang %}
-        {{ lang_name }}
+    {% if lang == site.default_lang %}
+        <a href=" {{ page.url }}">{{ lang_name }}</a>
     {% else %}
-        {% if page.name contains "index" %}
-            {% if lang == site.default_lang %}
-                <a href="../">{{ lang_name }}</a>
-            {% else %}
-                <a href="{{ site.url }}{{ lang }}">{{ lang_name }}</a>
-            {% endif %}
-        {% else %}
-            {% if lang == site.default_lang %}
-                <a href=" {{ page.url }}">{{ lang_name }}</a>
-            {% else %}
-                <a href="/{{ lang }}{{ page.url }}">{{ lang_name }}</a>
-            {% endif %}
-        {% endif %}
+        <a href="/{{ lang }}{{ page.url }}">{{ lang_name }}</a>
     {% endif %}
 {% endfor %}
